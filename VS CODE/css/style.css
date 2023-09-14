@@ -1,0 +1,96 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+}
+font-face {
+    font-family: 'cuberfone';
+    src: url(src/stle/ofont.ru_Archangelsk.ttf)
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.social {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.social__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.social__link {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social__link--youtube {
+    background-image: url("src/youtube.svg");
+}
+
+.social__link--vk {
+    background-image: url("src/vk.svg");
+}
+
+.social__link--facebook {
+    background-image: url("src/facebook.png");
+}
+
+.social__link--twitter {
+    background-image: url("src/twitter.svg");
+}
+
+.social__link--twitch {
+    background-image: url("src/twitch.svg");
+}
+
+.social__link--instagram {
+    background-image: url("src/instagram.svg");
+}
+
+.container {
+    padding: 0 10vw;
+}
+
+.hero-info {
+    position: relative;
+    z-index: 5;
+    max-width: 624px;
+    padding: 70px;
+    background-color: var(--accent-color);
+}
+
+.hero-info__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-family: 'cuberfone', sans-serif;
+    font-weight: 400;
+    font-size: 62px;
+    line-height: 63px;
+    color: var(--dark-color);
+}
+
+.hero-info__btn {
+    font-size: 24px;
+    padding: 25px 50px;
+}
+
+.hero__container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
